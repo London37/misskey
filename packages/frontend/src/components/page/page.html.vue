@@ -7,7 +7,8 @@
 
 <script lang="ts" setup>
 import * as Misskey from 'misskey-js';
-
+import { PageBlock } from 'misskey-js';
+	
 const props = defineProps<{
 	block: Extract<Misskey.entities.PageBlock, {type: 'html' }>,
 	page: Misskey.entities.Page,
