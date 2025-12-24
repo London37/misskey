@@ -243,6 +243,11 @@ async function add() {
 			type,
 			detailed: false,
 			note: null,
+	} else if (type === 'html') { // Get Shaky!
+		content.value.push({
+			id,
+			type,
+			content: '',
 		});
 	}
 }
