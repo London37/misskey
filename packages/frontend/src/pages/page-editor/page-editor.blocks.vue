@@ -21,6 +21,7 @@ import XSection from './els/page-editor.el.section.vue';
 import XText from './els/page-editor.el.text.vue';
 import XImage from './els/page-editor.el.image.vue';
 import XNote from './els/page-editor.el.note.vue';
+import XHtml from './els/page-editor.el.html.vue'; //Get Shaky!
 
 function getComponent(type: string) {
 	switch (type) {
@@ -28,6 +29,7 @@ function getComponent(type: string) {
 		case 'text': return XText;
 		case 'image': return XImage;
 		case 'note': return XNote;
+		case 'html': return XHtml; //Get Shaky!
 		default: return null;
 	}
 }
