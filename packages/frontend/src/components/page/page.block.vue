@@ -15,6 +15,7 @@ import XSection from './page.section.vue';
 import XImage from './page.image.vue';
 import XNote from './page.note.vue';
 import XDynamic from './page.dynamic.vue';
+import XHtml from './page.html.vue';
 
 function getComponent(type: string) {
 	switch (type) {
