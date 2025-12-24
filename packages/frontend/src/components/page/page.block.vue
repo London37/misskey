@@ -23,7 +23,7 @@ function getComponent(type: string) {
 		case 'image': return XImage;
 		case 'note': return XNote;
 
-		// 動的ページの代替用ブロック
+		// Placeholder block for dynamic pages
 		case 'button':
 		case 'if':
 		case 'textarea':
