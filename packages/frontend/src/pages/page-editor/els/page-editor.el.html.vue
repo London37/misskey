@@ -44,7 +44,8 @@ watch(blockContent, () => {
 	width: 100%;
 	min-width: 100%;
 	max-width: 100%;
-	min-height: 100px;
+	min-height: 150px;
+	resize: vertical;
 	margin: 0;
 	padding: 8px;
 	font-family: monospace; /* Better for editing HTML code */
