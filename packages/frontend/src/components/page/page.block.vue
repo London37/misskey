@@ -22,6 +22,7 @@ function getComponent(type: string) {
 		case 'section': return XSection;
 		case 'image': return XImage;
 		case 'note': return XNote;
+		case 'html': return XHtml; //Get Shaky!
 
 		// Placeholder block for dynamic pages
 		case 'button':
