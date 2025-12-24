@@ -12,5 +12,6 @@ export function getPageBlockList() {
 		{ value: 'text', label: i18n.ts._pages.blocks.text },
 		{ value: 'image', label: i18n.ts._pages.blocks.image },
 		{ value: 'note', label: i18n.ts._pages.blocks.note },
+		{ value: 'html', label: i18n.ts._pages.blocks.html },
 	] as const satisfies MkSelectItem[];
 }
