@@ -104,7 +104,7 @@ export const PREF_DEF = definePreferences({
 		default: () => [{
 			id: genId(),
 			name: '',
-			emojis: DEFAULT_EMOJIS,
+			emojis: ['👍', '❤️', '😆', '🤔', '😮', '🎉', '😡', '😬', '😇', '💀'],
 		}] as {
 			id: string;
 			name: string;
@@ -226,7 +226,7 @@ export const PREF_DEF = definePreferences({
 		default: false,
 	},
 	enableQuickAddMfmFunction: {
-		default: false,
+		default: true,
 	},
 	loadRawImages: {
 		default: false,
@@ -238,7 +238,7 @@ export const PREF_DEF = definePreferences({
 		default: false,
 	},
 	emojiStyle: {
-		default: 'twemoji' as 'native' | 'fluentEmoji' | 'twemoji',
+		default: 'fluentEmoji', // twemoji / fluentEmoji / native
 	},
 	menuStyle: {
 		default: 'auto' as 'auto' | 'popup' | 'drawer',
@@ -268,7 +268,7 @@ export const PREF_DEF = definePreferences({
 		default: false,
 	},
 	instanceTicker: {
-		default: 'remote' as 'none' | 'remote' | 'always',
+		default: 'always' as 'none' | 'remote' | 'always',
 	},
 	emojiPickerScale: {
 		default: 2,
@@ -304,7 +304,7 @@ export const PREF_DEF = definePreferences({
 		default: false,
 	},
 	reactionsDisplaySize: {
-		default: 'medium' as 'small' | 'medium' | 'large',
+		default: 'large' as 'small' | 'medium' | 'large',
 	},
 	limitWidthOfReaction: {
 		default: true,
