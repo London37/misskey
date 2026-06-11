@@ -1,3 +1,7 @@
+<!--
+SPDX-FileCopyrightText: syuilo and misskey-project
+SPDX-License-Identifier: AGPL-3.0-only
+-->
 <template>
   <!-- v-html renders the raw string from the database as HTML -->
 	<div :class="$style.htmlRoot"> <!-- Might change to $style.mainAbout -->
