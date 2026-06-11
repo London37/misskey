@@ -196,6 +196,18 @@ definePage(() => ({
 </script>
 
 <style lang="scss" module>
+.userItem {
+	display: flex;
+	align-items: center;
+	padding: 8px;
+	border-radius: 8px;
+	transition: background-color 0.2s;
+
+	&:hover {
+		background-color: var(--panelHighlight);
+	}
+}
+	
 .userItemMain {
 	display: flex;
 }
