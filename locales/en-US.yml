@@ -2766,6 +2766,7 @@ _pages:
     textarea: "Text area"
     section: "Section"
     image: "Images"
+    html: "HTML"
     button: "Button"
     dynamic: "Dynamic Blocks"
     dynamicDescription: "This block has been abolished. Please use {play} from now on."

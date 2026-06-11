@@ -33,6 +33,22 @@ type AllNullOrOptionalRecord<T> = {
 	[P in keyof T]: never;
 };
 
+// Updating TS definitions so the frontend & backend know what an HTML block looks like
+export type PageBlock = {
+	id: string;
+	type: string;
+	[key: string]: any; // Allows for standard block properties (text, content, etc.)
+} & ({
+	type: 'text';
+	text: string;
+} | {
+	type: 'html';
+	content: string;
+} | {
+	type: 'image';
+	fileId: string;
+});
+
 export type PureRenote =
 	Omit<Note, 'renote' | 'renoteId' | 'reply' | 'replyId' | 'text' | 'cw' | 'files' | 'fileIds' | 'poll'>
 	& AllNullRecord<Pick<Note, 'text'>>
