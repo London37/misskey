@@ -15,6 +15,7 @@ import XSection from './page.section.vue';
 import XImage from './page.image.vue';
 import XNote from './page.note.vue';
 import XDynamic from './page.dynamic.vue';
+import XHtml from './page.html.vue';
 
 function getComponent(type: string) {
 	switch (type) {
@@ -22,8 +23,9 @@ function getComponent(type: string) {
 		case 'section': return XSection;
 		case 'image': return XImage;
 		case 'note': return XNote;
+		case 'html': return XHtml; //Get Shaky!
 
-		// 動的ページの代替用ブロック
+		// Placeholder block for dynamic pages
 		case 'button':
 		case 'if':
 		case 'textarea':

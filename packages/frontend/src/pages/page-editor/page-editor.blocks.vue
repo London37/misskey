@@ -35,7 +35,7 @@ import XSection from './els/page-editor.el.section.vue';
 import XText from './els/page-editor.el.text.vue';
 import XImage from './els/page-editor.el.image.vue';
 import XNote from './els/page-editor.el.note.vue';
-import MkDraggable from '@/components/MkDraggable.vue';
+import XHtml from './els/page-editor.el.html.vue'; //Get Shaky!
 
 function getComponent(type: Misskey.entities.Page['content'][number]['type']): Component {
 	switch (type) {
@@ -43,7 +43,8 @@ function getComponent(type: Misskey.entities.Page['content'][number]['type']): C
 		case 'text': return XText;
 		case 'image': return XImage;
 		case 'note': return XNote;
-		default: return XText;
+		case 'html': return XHtml; //Get Shaky!
+		default: return null;
 	}
 }
 
